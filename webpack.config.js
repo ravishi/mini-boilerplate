@@ -5,10 +5,8 @@ module.exports = {
     entry: {
         index: "./src/index.html",
         bundle: [
-            // necessary for hot reloading with IE:
-            'eventsource-polyfill',
-            // listen to code updates emitted by hot middleware:
-            'webpack-hot-middleware/client',
+            // enable hot-reloading for IE
+            "eventsource-polyfill",
             "./src/index.jsx"
         ]
     },
